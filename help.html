@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html lang>
+<html lang="en">
 <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Contact Us</title>
     <style>
+        * {
+            box-sizing: border-box; 
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -63,12 +69,16 @@
             .menu-icon {
                 display: block;
             }
+            .issue-table th, .issue-table td {
+                padding: 10px;
+                font-size: 14px; 
+            }
         }
 
         .contact-container {
             max-width: 600px;
             margin: 50px auto;
-            padding: 10px;
+            padding: 10px 20px;
             text-align: left;
         }
 
@@ -97,6 +107,7 @@
             margin-top: 20px;
             border-collapse: collapse;
             text-align: left;
+            overflow-x: auto;
         }
 
         .issue-table th, .issue-table td {
@@ -147,6 +158,8 @@
             color: black;
             z-index: 1000;
             text-align: center;
+            width: 90%; 
+            max-width: 300px;
         }
         .popup button {
             margin-top: 10px;
